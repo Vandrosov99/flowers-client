@@ -1,0 +1,46 @@
+.basket {
+  // justify-self: center;
+  align-self: flex-end;
+  position: sticky;
+  bottom: 40px;
+  right: 0px;
+  flex: 0 1;
+  height: max-content;
+  margin-bottom: $main-gap;
+
+  .basket-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+
+    &__svg {
+      transition: 0.2s;
+      width: 40px;
+      height: 40px;
+      fill: $font-color;
+    }
+
+    &:hover .basket-icon__svg {
+      fill: $main-color;
+    }
+  }
+
+  .basket-counter {
+    background: $main-color;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+}

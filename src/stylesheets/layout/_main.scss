@@ -1,0 +1,10 @@
+.main {
+  // display: grid;
+  // grid-template-columns: max-content 1fr max-content;
+  // grid-template-rows: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin: $main-gap 0px 0px 0px;
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
